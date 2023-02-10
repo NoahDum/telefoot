@@ -1,0 +1,7 @@
+{
+    "name": "noahduminil/telefoot",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.7"
+    }
+}

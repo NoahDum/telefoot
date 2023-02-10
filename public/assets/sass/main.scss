@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+	font-family: "Raleway", sans-serif;
+	background-color: #191a20;
+	color: #f4f4f6;
+	margin: 0;
+}
+header {
+	display: flex;
+	padding: 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	img {
+		height: 6rem;
+	}
+	nav {
+		ul {
+			li {
+				display: inline-block;
+				font-family: "subset-AvantGarde-Bold";
+				text-transform: uppercase;
+				font-size: 1.4rem;
+				color: #c6c6c6;
+				padding: 0 1.5rem;
+			}
+		}
+	}
+}
+section {
+	padding: 3rem 0;
+	text-align: center;
+	h2 {
+		font-size: 3rem;
+		& + p {
+			margin-bottom: 2.5rem;
+		}
+	}
+	&.hero {
+		padding: 0;
+		img {
+			width: 100%;
+		}
+	}
+	&.tv-rights {
+		.tv-rights-logo {
+			display: flex;
+			justify-content: center;
+			img {
+				max-height: 8rem;
+				margin: 1rem;
+			}
+		}
+		.tv-rights-content {
+			h4 {
+				font-weight: bold;
+				margin-bottom: 2.4rem;
+				strong {
+					text-transform: uppercase;
+				}
+			}
+			.tv-rights-content-items {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				font-size: 1.4rem;
+				.tv-rights-content-item {
+					&::before {
+						content: "";
+						height: 0.1rem;
+						width: 5rem;
+						position: absolute;
+						top: 0;
+						left: calc(50% - 2.5rem);
+						background-color: #9fa5b2;
+					}
+				}
+			}
+		}
+	}
+}
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	.row {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.item {
+			flex-basis: 30%;
+			margin: 0 1.5rem 3rem;
+			padding: 3rem;
+			background-color: #24272d;
+			.icons {
+				display: flex;
+				justify-content: center;
+				[class^=icon-] {
+					font-size: 6rem;
+					color: #777;
+				}
+				img {
+					height: 6rem;
+					&:first-child {
+						margin-right: 2rem;
+					}
+				}
+			}
+			.note {
+				font-size: 1.2rem;
+				text-transform: none;
+				font-weight: normal;
+				color: #687182;
+			}
+		}
+	}
+}
+@media screen and (min-width: 767px) {
+    section.tv-rights .tv-rights-content .tv-rights-content-items {
+      padding: 0 15rem;
+    }
+}
+	section {
+		&.tv-rights {
+			.tv-rights-content {
+				.tv-rights-content-items {
+					.tv-rights-content-item {
+						flex-basis: 33.33%;
+						padding: 1rem 2rem 2rem;
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+
+.offers {
+	.offer {
+		font-weight: bold;
+		text-transform: uppercase;
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			margin-bottom: 2rem;
+			img {
+				width: 10rem;
+			}
+		}
+		.price {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			.euro {
+				font-size: 4rem;
+			}
+		}
+		.engagement {
+			color: #687182;
+			font-size: 1.2rem;
+		}
+		.features {
+			margin-top: 3rem;
+			.feature {
+				border: 0.1rem solid #f4f4f6;
+				padding: 1.5rem;
+				margin-bottom: 0.5rem;
+				font-size: 1.2rem;
+				img {
+					width: 5rem;
+				}
+			}
+		}
+	}
+}
+#telefoot-bar {
+	background-image: url("../img/bg-bar.d86633e.jpg");
+	background-size: cover;
+	padding: 8rem 0;
+	img {
+		height: 7rem;
+	}
+}
+footer {
+	background-image: url("../img/bg-footer.ac49cc9.jpg");
+	background-size: cover;
+	background-position: bottom;
+	padding: 4rem 0;
+	font-family: "subset-AvantGarde-Bold";
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	text-align: center;
+	.footer-brand {
+		img {
+			height: 6rem;
+		}
+	}
+	.footer-list {
+		display: flex;
+		justify-content: space-around;
+		padding: 3rem 0 1rem;
+		ul {
+			padding: 0;
+			li {
+				list-style: none;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	.footer-copy {
+		span {
+			color: #687182;
+		}
+	}
+}
