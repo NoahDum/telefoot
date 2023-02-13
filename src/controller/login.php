@@ -26,11 +26,9 @@ class LoginController {
                 // redirection vers la page d'accueil
                 header("Location: ./index.php?page=my_account");
             } else {
-                // Les informations saisies sont incorrectes 
-                $message = "<p>Impossible de se connecter avec les informations saisies, veuillez rééesayer</p>";
+                session_start();
+                $_SESSION['message'] = "<p>Impossible de se connecter avec les informations saisies, veuillez réessayer</p>";
             };
         }
-        var_dump($message);
-        return $message;
     }
 }

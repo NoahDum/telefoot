@@ -4,7 +4,10 @@ include("header.php");
 ?>
 <main>
     <h1>Connexion à l'espace utilisateur</h1>
-    <?= $message?>
+    <?php if (isset($_SESSION['message'])) {
+        echo $_SESSION['message'];
+        unset($_SESSION['message']);
+    } ?>
     <form action="" method="post">
         <div class="form-group">
             <label for="inputEmail">Email : </label>
