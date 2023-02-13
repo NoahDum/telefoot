@@ -11,6 +11,7 @@ class SubscribeView
 
     public function render()
     {
+        $data = $this->controller->sub();
         require($this->template);
     }
 }

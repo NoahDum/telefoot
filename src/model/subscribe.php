@@ -7,4 +7,11 @@ class SubscribeModel
     {
         $this->db = $db;
     }
+    public function register($email, $hash){
+
+        $query = $this->db->prepare("INSERT INTO users (email, password) VALUES (:email, :password)");
+        $query->bindParam(":email", $email);
+        $query->bindParam(":password", $hash);
+        return $query->execute();
+    }
 }

@@ -23,7 +23,7 @@ session_start();
                 <a href="./index.php">
                     <li>Home</li>
                 </a>
-                <li>Telefoot Bar</li>
+                <li>Telefoot Bar</li>                    
             </ul>
         </nav>
         <?php
