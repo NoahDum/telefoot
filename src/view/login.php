@@ -11,6 +11,7 @@ class LoginView
 
     public function render()
     {
+        $data=$this->controller->log();
         require($this->template);
     }
 }
