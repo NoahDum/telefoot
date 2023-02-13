@@ -35,6 +35,11 @@ $pages = array(
         "model" => "AccountModel",
         "view" => "AccountView",
         "controller" => "AccountController"
+    ),
+    "logout" => array(
+        "model" => "LogoutModel",
+        "view" => "LogoutView",
+        "controller" => "LogoutController"
     )
 );
 
