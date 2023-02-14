@@ -11,6 +11,7 @@ class ResetView
 
     public function render()
     {
+        $this->controller->reset_password();
         require($this->template);
     }
 }
